@@ -1,3 +1,3 @@
-// $(function() {
-//     $('.col-sm-6').matchHeight();
-// });
+$(function() {
+    $('.col-sm-6').matchHeight();
+});
