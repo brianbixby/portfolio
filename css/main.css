@@ -1,3 +1,5 @@
+
+
 #pictureOfMe {
   width: 100%;
   max-width: 450px;
@@ -14,7 +16,15 @@ img {
   border: 1px black solid;
 }
 
-
+/* Extra Small Devices */
+@media only screen and (max-width : 768px) {
+  #topNav {
+    display: none;
+  }
+  #everythingButNav {
+    margin-left: 65px;
+  }
+}
 
 /* Custom */
 @media only screen and (min-width : 320px) {
@@ -32,6 +42,12 @@ img {
     display: flex;
     align-items: center;
   }
+  #accordion {
+    display: none;
+  }
+  #about {
+    margin-top:60px;
+  }
 }
 
 /* Medium Devices */
@@ -48,8 +64,9 @@ img {
   }
 }
 
-.flip-container{
--webkit-perspective:1000;
+/* Animation */
+.flip-container {
+  -webkit-perspective:1000;
    -moz-perspective:1000;
     -ms-perspective:1000;
      -o-perspective:1000;
@@ -57,7 +74,7 @@ img {
 }
 
 .flipped {
--webkit-transform:rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
    -moz-transform:rotateY(180deg);
     -ms-transform:rotateY(180deg);
      -o-transform:rotateY(180deg);
@@ -65,32 +82,32 @@ img {
 }
 
 .flipper {
--webkit-transition:0.6s;
+  -webkit-transition:0.6s;
    -moz-transition:0.6s;
      -o-transition:0.6s;
         transition:0.6s;
--webkit-transform-style:preserve-3d;
+  -webkit-transform-style:preserve-3d;
    -moz-transform-style:preserve-3d;
     -ms-transform-style:preserve-3d;
      -o-transform-style:preserve-3d;
         transform-style:preserve-3d;
-position:relative;
+  position:relative;
 }
 
-.front, .back{
--webkit-backface-visibility:hidden;
+.front, .back {
+  -webkit-backface-visibility:hidden;
    -moz-backface-visibility:hidden;
     -ms-backface-visibility:hidden;
      -o-backface-visibility:hidden;
         backface-visibility:hidden;
 }
 
-.front{
-z-index:2;
+.front {
+  z-index:2;
 }
 
-.back{
--webkit-transform:rotateY(180deg);
+.back {
+  -webkit-transform:rotateY(180deg);
    -moz-transform:rotateY(180deg);
     -ms-transform:rotateY(180deg);
      -o-transform:rotateY(180deg);

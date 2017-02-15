@@ -1,0 +1,59 @@
+.btn-dark {
+    width: 90px;
+    height: 40px;
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,  0,  0,  1);
+    margin-left: 0;
+}
+.btn-dark:hover {
+    color: #fff;
+    background-color: rgba(0,  0,  0,  0.7);
+}
+
+.sidebarButtons {
+  margin-left: 0;
+  padding-left: 0px;
+  width: 90px;
+  height: 40px;
+  color: #fff;
+  background-color: rgba(0,  0,  0,  1);
+  text-align: center;
+  padding-top: 12px;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.sideNav {
+    z-index: 801;
+    position: fixed;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 100%}
+.sideNav ul {
+    background: #222;
+}
+.sideNav ul li {
+    list-style: none outside none;
+    display: block;
+    background: #222;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#sideNav-collapse:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: none;
+    position: relative;
+    color: white;
+}
+#sideNav-collapse.collapsed:after {
+    content: "\f067";
+}
