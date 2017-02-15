@@ -1,4 +1,6 @@
-
+#console {
+  display: none;
+}
 
 #pictureOfMe {
   width: 100%;
