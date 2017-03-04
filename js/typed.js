@@ -1,7 +1,7 @@
 $(function(){
     $("#typing-text").typed({
-      strings: ["First sentence.", "Second sentence."],
-      typeSpeed: 0
+      strings: ["Hello, and welcome.", "Feel free to get in touch.", "Let's make amazing things together."],
+      typeSpeed: 20
     });
 });
 

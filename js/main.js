@@ -18,7 +18,30 @@ $('a').click(function(){
     return false;
 });
 
+$(document).ready(function() {
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    windowWidth = $(window).innerWidth();
+    console.log('height', windowHeight);
+    console.log('width', windowWidth);
+    $('#typingDiv').css('min-height', windowHeight);
+    if(windowWidth > 767) {
+      $('#about').css('min-height', windowHeight);
+    }
+  };
+  setHeight();
+
+  $(window).resize(function() {
+    setHeight();
+  });
+});
 
 
 
-// ,window.joinUs=function(){return console.log("%cWe're excited to have you! %c☃",e(!1,"#d22"),e(!1,"#333")),window.location.href="/_/_/about/careers/",""}}()}
+
+// If you don't care about changing the height when the window resizes then you can use the following simplified version instead:
+
+// $(document).ready(function() {
+//   windowHeight = $(window).innerHeight();
+//   $('.sidebar').css('min-height', windowHeight);
+// });
